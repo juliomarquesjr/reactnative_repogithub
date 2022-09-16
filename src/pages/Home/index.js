@@ -9,14 +9,16 @@ import {getRepositorio, getUsuario} from '../../services/requisicoes/gitHub';
 
 const Home = ({navigation}) => {
   const textos = useTextos().home;
-  const [usuario, setUsuario] = useState('juliomarquesjr');
+  const [usuario, setUsuario] = useState();
 
   async function consultaUsuario() {
-    
     const dados = await getUsuario(usuario);
-    const repositorios = await getRepositorio(usuario)
+    const repositorios = await getRepositorio(usuario);
 
-    navigation.navigate('Repositorios', {dadosUsuario: dados, dadosRepositorio: repositorios});
+    navigation.navigate('Repositorios', {
+      dadosUsuario: dados,
+      dadosRepositorio: repositorios,
+    });
   }
 
   return (
@@ -25,6 +27,7 @@ const Home = ({navigation}) => {
       <View style={estilos.boxPesquisa}>
         <TextInput
           style={estilos.inputPesquisa}
+          autoCapitalize="none"
           placeholder={textos.placeholder}
           value={usuario}
           onChangeText={setUsuario}
@@ -33,11 +36,10 @@ const Home = ({navigation}) => {
           <Icon style={estilos.iconPesquisa} name="search" size={20} />
         </TouchableOpacity>
       </View>
-      
+
       <TouchableOpacity
         style={estilos.btnBuscar}
         onPress={() => consultaUsuario()}>
-          
         <Text style={estilos.btnTexto}>{textos.botao}</Text>
       </TouchableOpacity>
     </>
