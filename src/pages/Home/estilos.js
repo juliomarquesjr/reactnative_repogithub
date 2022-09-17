@@ -29,9 +29,10 @@ const estilos = StyleSheet.create({
     color: "#889195",
   },
   btnBuscar: {
+    flexDirection: 'row',
     backgroundColor: '#3A3F47',
     height: 52,
-    width: 220,
+    width: 250,
     borderRadius: 16,
     alignSelf: 'center',
     alignItems: 'center',

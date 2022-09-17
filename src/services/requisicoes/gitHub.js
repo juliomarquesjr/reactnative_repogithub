@@ -5,8 +5,8 @@ export const getUsuario = async username => {
     const resultado = await api.get(username);
     return resultado.data;
   } catch (error) {
-    console.error(error);
-    return {};
+    console.log(error);
+    return false;
   }
 };
 
@@ -15,7 +15,7 @@ export const getRepositorio = async username => {
     const resultado = await api.get(username + '/repos');
     return resultado.data;
   } catch (error) {
-    console.erro(error);
+    console.log(error);
     return {};
   }
 };
