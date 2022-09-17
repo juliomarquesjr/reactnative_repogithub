@@ -5,7 +5,7 @@ const estilos = StyleSheet.create({
     marginTop: 30,
     marginLeft: 30,
     marginRight: 30,
-    fontSize: 36,
+    fontSize: 38,
     fontWeight: 'bold',
   },
   boxPesquisa: {

@@ -1,6 +1,6 @@
 const appTextos = {
   home: {
-    titulo: 'Bem Vindo!',
+    titulo: '< Github Repositórios ! />',
     placeholder: 'Digite o usuario do GitHub',
     botao: 'Consultar GitHub',
     alertTitulo: 'Falha ao Pesquisar',
