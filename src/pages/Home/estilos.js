@@ -7,6 +7,7 @@ const estilos = StyleSheet.create({
     marginRight: 30,
     fontSize: 38,
     fontWeight: 'bold',
+    color: "#3A3F47"
   },
   boxPesquisa: {
     backgroundColor: '#D6E3E2',
