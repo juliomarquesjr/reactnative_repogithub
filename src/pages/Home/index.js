@@ -16,7 +16,7 @@ import {getRepositorio, getUsuario} from '../../services/requisicoes/gitHub';
 
 const Home = ({navigation}) => {
   const textos = useTextos().home;
-  const [usuario, setUsuario] = useState();
+  const [usuario, setUsuario] = useState('');
   const [carregando, setCarregando] = useState(false);
 
   async function consultaUsuario() {
