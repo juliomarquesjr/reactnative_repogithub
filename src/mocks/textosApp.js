@@ -7,6 +7,7 @@ const appTextos = {
     alertTexto: 'Por favor, verifique o usuário digitado e tente novamente.',
   },
   repositorios: {
+    voltar: 'Voltar',
     seguindo: 'Seguindo',
     seguidores: 'Seguidores',
     gits: 'Gits',

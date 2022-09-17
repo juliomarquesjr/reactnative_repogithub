@@ -5,6 +5,30 @@ const estilos = StyleSheet.create({
     marginLeft: 30,
     marginRight: 30,
   },
+
+  boxVoltar: {
+    flexDirection: 'row',
+    marginTop: 30,
+    alignItems: 'center',
+  },
+  botaoVolta: {
+    backgroundColor: '#3A3F47',
+    height: 34,
+    width: 34,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 22,
+  },
+  iconVoltar: {
+    color: '#EEEEEE',
+  },
+  textoVoltar: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#3A3F47',
+    marginLeft: 10,
+  },
+
   cabecalho: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -52,7 +76,7 @@ const estilos = StyleSheet.create({
     borderBottomWidth: 2,
     paddingBottom: 6,
     width: 160,
-    borderColor: "#8B9A47"
+    borderColor: '#8B9A47',
   },
 });
 export default estilos;

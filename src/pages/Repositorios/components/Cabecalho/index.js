@@ -1,16 +1,26 @@
 import React from 'react';
-import {useRoute} from '@react-navigation/native';
-import {Image, View, Text} from 'react-native';
+import {useNavigation, useRoute} from '@react-navigation/native';
+import {Image, View, Text, TouchableOpacity} from 'react-native';
 import useTextos from '../../../../hooks/useTextos';
+import Icon from 'react-native-vector-icons/Feather';
 
 import estilos from './estilos';
 
 const Cabecalho = () => {
   const textos = useTextos().repositorios;
   const dadosUsuario = useRoute().params.dadosUsuario;
+  const navigation = useNavigation();
 
   return (
     <View style={estilos.boxDefault}>
+      <View style={estilos.boxVoltar}>
+        <TouchableOpacity
+          style={estilos.botaoVolta}
+          onPress={() => navigation.goBack()}>
+          <Icon style={estilos.iconVoltar} name="arrow-left" size={22} />
+        </TouchableOpacity>
+        <Text style={estilos.textoVoltar}>{textos.voltar}</Text>
+      </View>
       <View style={estilos.cabecalho}>
         <Image source={{uri: dadosUsuario.avatar_url}} style={estilos.avatar} />
         <View style={estilos.cabecalhoCaixas}>
