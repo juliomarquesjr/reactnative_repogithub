@@ -25,5 +25,13 @@ const estilos = StyleSheet.create({
     padding: 5,
     borderRadius: 16,
   },
+  linhaDivisoria: {
+    flex: 1,
+    height: 3,
+    backgroundColor: '#E5E5E5',
+    width: '55%',
+    alignSelf: 'center',
+    marginTop: 20,
+  },
 });
 export default estilos;
