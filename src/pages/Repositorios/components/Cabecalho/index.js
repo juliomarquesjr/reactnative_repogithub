@@ -17,7 +17,7 @@ const Cabecalho = () => {
         <TouchableOpacity
           style={estilos.botaoVolta}
           onPress={() => navigation.goBack()}>
-          <Icon style={estilos.iconVoltar} name="arrow-left" size={22} />
+          <Icon style={estilos.iconVoltar} name="arrow-left" size={16} />
         </TouchableOpacity>
         <Text style={estilos.textoVoltar}>{textos.voltar}</Text>
       </View>

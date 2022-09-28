@@ -13,8 +13,8 @@ const estilos = StyleSheet.create({
   },
   botaoVolta: {
     backgroundColor: '#3A3F47',
-    height: 34,
-    width: 34,
+    height: 22,
+    width: 22,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 22,
@@ -23,7 +23,7 @@ const estilos = StyleSheet.create({
     color: '#EEEEEE',
   },
   textoVoltar: {
-    fontSize: 24,
+    fontSize: 18,
     fontWeight: 'bold',
     color: '#3A3F47',
     marginLeft: 10,

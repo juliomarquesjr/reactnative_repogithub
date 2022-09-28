@@ -17,7 +17,7 @@ const Item = ({titulo = 'N/A', descricao, data}) => {
         </View>
 
         <TouchableOpacity disabled={false}>
-          <Icon style={estilos.icone} name="arrow-right" size={30} />
+          <Icon style={estilos.icone} name="arrow-right" size={16} />
         </TouchableOpacity>
       </View>
       <View style={estilos.linhaDivisoria} />
